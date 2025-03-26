@@ -1,0 +1,168 @@
+ /* Style de base pour le bouton */
+		.bouton-rond {
+		display: inline-block;
+		padding: 23px;
+		background-color: orangered; /* Fond blanc */
+		background-color: orangered; /* Fond blanc */
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		border: 4px solid white; /* Bordure bleue */
+		border-radius: 30px; /* Utilisation de la propriété border-radius pour créer un cercle */
+		margin-left: 180px; /* Espace à gauche de chaque bouton */
+		margin-top: 7px;
+		
+		
+		
+	}
+
+    /* Style au survol du bouton */
+    .bouton-rond:hover {
+      background-color: #f2f2f2; /* Fond blanc plus clair au survol */
+    }
+
+    /* Conteneur pour centrer les boutons */
+    .conteneur-boutons {
+      text-align: center;
+	  vertical-align: middle;
+	  display: inline-block;
+	  font-size:23px;
+	  color:white;
+    }
+	
+	
+	.Xiaomi {
+		 width: 1600px; /* Ajustez la largeur de l'image selon vos besoins */
+        vertical-align: middle; /* Ajout de cette ligne pour aligner verticalement l'image */
+        margin-left: 25px; /* Espace à droite de l'image */
+	    margin-top:25px;
+    }
+	
+	
+	 .image {
+      width: 1950px; /* Ajustez la largeur de l'image selon vos besoins */
+      vertical-align: middle; /* Ajout de cette ligne pour aligner verticalement l'image */
+      margin-left: 1300px; /* Espace à droite de l'image */
+	  margin-top:185px;
+    }
+
+    .font {
+      font-family: 'Long Cang', cursive;
+      margin-top: 20px;
+      display: inline-block; /* Ajout de cette ligne pour aligner le texte et l'image horizontalement */
+	  margin-left: 25px;
+	  color:white;
+	  
+    }
+	
+	body{
+		background-image: url('Contact.jpg');
+	    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+	}
+	
+	.count{
+		margin-left: 1420px;
+		margin-top:15px;
+		width:85%;
+	}
+	
+	.title {
+	  font-family: 'Long Cang', cursive;
+      margin-top: 20px;
+      display: inline-block; /* Ajout de cette ligne pour aligner le texte et l'image horizontalement */
+	  margin-left: 25px;
+	  color:white;
+	}
+	
+	
+	
+	p {
+        font-size: 35; 
+        text-decoration: none;
+        padding-bottom: 10px; /* Espacement en bas de 10 unités */
+        position: absolute; /* Position absolue par rapport au conteneur parent */
+        left:1400px ;  
+        color: white;
+        margin-bottom: 10%;
+   }
+   
+  .paragraphe {
+		font-size: 35px; /* Taille de police en pixels */
+		text-decoration: none;
+		margin-left: 135px;
+		color: black;
+        margin-bottom: 15px;
+        display: flex;
+  }
+  
+  .container {
+        max-width: 600px; /* Largeur maximale du conteneur */
+        margin: 0 auto; /* Centre le conteneur horizontalement */
+        padding: 20px; /* Rembourrage intérieur de 20  */
+        background-color: orange; /* Couleur de fond blanche */
+        border-radius: 5px; /* Bordure arrondie avec un rayon de 5px */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+        text-align: center; /* Alignement du texte au centre */
+        margin-top:-520px;
+        margin-right: 970px;
+}
+
+/* Style pour les titres de niveau 2 */
+h1 {
+    color: white; /* Couleur du texte du titre */
+	
+}
+
+/* Style pour les champs de texte et mots de passe */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Largeur à 100% du conteneur parent */
+    padding: 10px; /* Rembourrage intérieur de 10  */
+    margin: 10px 0; /* Marge extérieure de 10  en haut et en bas */
+    border: 2px solid black; /* Bordure de 1px solide avec une couleur bleue */
+    border-radius: 5px; /* Bordure arrondie avec un rayon de 5px */
+    outline: none; /* Supprime la bordure de mise au point par défaut */
+}
+
+/* Style pour les champs de texte et mots de passe lorsqu'ils sont en focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 5px rgba(0, 116, 228, 0.7); /* Ombre légère bleue lorsqu'en focus */
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #4caf50; /* Couleur de fond bleue */
+    color: #fff; /* Couleur du texte blanche */
+    padding: 10px 20px; /* Rembourrage intérieur de 10 uen haut/bas et 20 à gauche/droite */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Bordure arrondie avec un rayon de 5px */
+    cursor: pointer; /* Curseur de pointeur au survol */
+}
+
+/* Style pour le bouton de soumission lorsqu'il est survolé */
+input[type="submit"]:hover {
+    background-color: green; /* Couleur de fond bleue plus foncée au survol */
+}
+
+/* Style pour le message de confirmation */
+.confirmation-message {
+    margin-top: 20px; /* Marge en haut de 20 */
+    font-weight: bold; /* Texte en gras */
+    display: none; /* Par défaut, le message de confirmation n'est pas affiché */
+}
+
+/* Style pour le message de confirmation en cas de succès */
+.confirmation-success {
+    color: green; /* Couleur verte pour le texte de succès */
+	font-size:26px;
+}
+
+/* Style pour le message de confirmation en cas d'erreur */
+.confirmation-error {
+    color: red; /* Couleur rouge pour le texte d'erreur */
+	font-size:26px;
+	
+}

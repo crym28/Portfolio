@@ -1,0 +1,129 @@
+<html>
+	<head>
+		 <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+  
+	</head>
+	
+	<body></body>
+	<img src="xiaomi.jpg" width="8%" align="left">
+	<div class="font">
+	<h1> Xiaomi</h1>
+	</div>
+    <!-- Conteneur pour centrer les boutons -->
+    <div class="conteneur-boutons">
+    <!-- Éléments HTML représentant les boutons ronds -->
+    <a href="../Accueil/Accueil.html" class="bouton-rond">Accueil</a>
+    <a href="../à Propos/a propos.html" class="bouton-rond">À Propos</a>
+    <a href="../Produits/Produits1.html" class="bouton-rond">Produits</a>
+	<a href="../Contact/contact.html" class="bouton-rond">Contact</a>
+	<a href="../Connexion/Connexion.html" class="bouton-rond">Connexion</a>
+	
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <div class="container">
+	<img src="xiaomi.jpg" width="8%" align="left">
+  </div>
+  <div class="title">
+	<h1> Xiaomi</h1>
+ </div>
+ <font color="white">
+ <br></br>
+ <h2><p>24-26 Quai Alphonse Le Gallo </p></h2>
+ <br></br>
+ <br></br>
+ <div class="paragraphe">
+	<h1><p> SUIVEZ</p></h1>
+</div>
+
+<div class= "image">
+
+	<a href="https://www.instagram.com/xiaomi.france/">
+        <img src="Instagram LOGO (1).png" width="5%" alt="Image du réseaux social Instagram">
+    </a>
+	
+    <a href="https://twitter.com/xiaomi">
+        <img src="ImageTwitter (1).jpg" width="5%" alt="Image du réseaux social X (Twitter)">
+    </a> 
+    <a href="https://www.facebook.com/XiaomiGlobal/">
+        <img src="ImagesFaccebook (1).png" width="5%" alt="Image du réseaux social Facebook">
+    </a> 
+    <a href="https://www.youtube.com/c/xiaomi/videos">
+        <img src="ImagesYoutube (1).jpg" width="9%" alt="Image du réseaux social Youtube">
+    </a>
+</div>
+ <div class="contact">
+        <h2>Formulaire De Contact</h2>
+        <form action="https://formspree.io/f/xeoovldw" method="POST">
+            <label for="firstName">Nom et Prénom :</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+	
+	
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Validation côté client
+        var isValid = validateForm();
+        
+        if (isValid) {
+            // Ajoutez ici le code pour envoyer les données à votre serveur.
+            // Exemple d'affichage des données (à des fins de test).
+            alert("Votre message a bien été envoyé à Xiaomi.\n\n" + getFormData());
+            // Vous pouvez également ajouter ici du code AJAX pour envoyer les données au serveur.
+        }
+    });
+
+    function validateForm() {
+        var isValid = true;
+
+        var elements = document.getElementById("contactForm").elements;
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].type !== "submit" && !elements[i].checkValidity()) {
+                isValid = false;
+                displayError(elements[i].name, elements[i].validationMessage);
+            }
+        }
+
+        return isValid;
+    }
+
+    function displayError(fieldName, errorMessage) {
+        var errorElement = document.getElementById(fieldName + "Error");
+        if (!errorElement) {
+            errorElement = document.createElement("div");
+            errorElement.id = fieldName + "Error";
+            errorElement.className = "error";
+            document.getElementById(fieldName).insertAdjacentElement("afterend", errorElement);
+        }
+        errorElement.textContent = errorMessage;
+    }
+
+    function getFormData() {
+        var formData = "";
+        var elements = document.getElementById("contactForm").elements;
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].type !== "submit") {
+                formData += elements[i].name + ": " + elements[i].value + "\n";
+            }
+        }
+        return formData;
+    }
+</script>
+</body>
+</html>
+
+ 

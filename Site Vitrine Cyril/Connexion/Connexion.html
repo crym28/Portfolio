@@ -1,0 +1,113 @@
+<html>
+	<head>
+		 <title>Connexion</title>
+        <link rel="stylesheet" href="connexion.css">
+  
+	</head>
+	
+	<body>
+	<img src="Xiaomi_Logo_2021.png" width="8%" align="left">
+	<div class="font">
+	<h1> Xiaomi</h1>
+	</div>
+    <!-- Conteneur pour centrer les boutons -->
+    <div class="navbar">
+    <!-- Éléments HTML représentant les boutons ronds -->
+    <a href="../Accueil/Accueil.html" class="bouton-rond">Accueil</a>
+    <a href="../à Propos/a propos.html" class="bouton-rond">À Propos</a>
+    <a href="../Produits/Produits1.html" class="bouton-rond">Produits</a>
+	<a href="../Contact/contact.html" class="bouton-rond">Contact</a>
+	<a href="../Connexion/Connexion.html" class="bouton-rond">Connexion</a>
+	
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <div class="count">
+	<img src="Xiaomi_Logo_2021.png" width="8%" align="left">
+  </div>
+  <div class="title">
+	<h1> Xiaomi</h1>
+ </div>
+ <font color="white">
+ <br></br>
+ <h2><p align="right">24-26 Quai Alphonse Le Gallo </p></h2>
+ <br></br>
+ <br></br>
+ 
+
+<div class= "image">
+
+    <div class="paragraphe">
+        <h1><p> Suivez-Nous sur : </p></h1>
+    </div>
+
+	<a href="https://www.instagram.com/xiaomi.france/">
+        <img src="Instagram LOGO (1).png" width="15%" alt="Image du réseaux social Instagram">
+    </a>
+	
+    <a href="https://twitter.com/xiaomi">
+        <img src="ImageTwitter (1).jpg" width="15%" alt="Image du réseaux social X (Twitter)">
+    </a> 
+    <a href="https://www.facebook.com/XiaomiGlobal/">
+        <img src="ImagesFaccebook (1).png" width="15%" alt="Image du réseaux social Facebook">
+    </a> 
+    <a href="https://www.youtube.com/c/xiaomi/videos">
+        <img src="ImagesYoutube (1).jpg" width="26%" alt="Image du réseaux social Youtube">
+    </a>
+</div>
+<!-- Conteneur principal de la page -->
+		<div class="container">
+			<!-- Titre de la section de connexion -->
+			<h2>Connexion</h2>
+<!-- Formulaire de connexion -->
+			<form id="loginForm">   
+				<!-- Champ pour le nom d'utilisateur -->
+				<input type="text" id="username" placeholder="Nom d'utilisateur" required>
+
+				<!-- Champ pour le mot de passe -->
+				<input type="password" id="password" placeholder="Mot de passe" required>
+
+				<!-- Bouton du formulaire -->
+				<input type="submit" value="Se Connecter">
+			</form>
+
+			<!-- Lien vers la création d'un nouveau compte -->
+			<p class="create-account" >Pas encore de Compte ? <a href="../Inscription/inscription.html">Nouveau compte</a></p>
+		</div>
+
+		<!-- Conteneur pour afficher les messages (connexion réussi ou échoué) -->
+		<div class="message-container" id="messageContainer"></div>
+
+		<!-- Script JavaScript pour formulaire de connexion -->
+		<script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            // Empêche l'envoi du formulaire par défaut
+            event.preventDefault();
+
+            // Récupère les valeurs des champs du formulaire
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var messageContainer = document.getElementById("messageContainer");
+
+            // Vérifie les identifiants et affiche un message approprié
+            if (username === "danoush" && password === "2023") {
+                messageContainer.innerText = "Connexion réussie!";
+                messageContainer.classList.remove("error");
+            } else {
+                messageContainer.innerText = "Identifiant ou mot de passe incorrect.";
+                messageContainer.classList.add("error");
+            }
+
+            // Affiche le conteneur de message
+            messageContainer.style.display = "block";
+
+            // Masque le message après 5 secondes
+            setTimeout(function() {
+                messageContainer.style.display = "none";
+            }, 5000);
+        });
+		</script>
+	</body>
+</html>

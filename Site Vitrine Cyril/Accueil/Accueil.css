@@ -1,0 +1,87 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+}
+
+header .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200%;
+	margin: 0 auto;
+}
+
+.navbar .logo{
+    color: orangered;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.navbar a{
+    color: white;
+}
+
+body {
+    height: auto;
+    background: url(Photoleap_12_12_2023_10_32_23_wgCX1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.section .titre {
+    max-width: 1200px;
+    margin: 30px ;
+    width: 100%;
+    color: orange;
+}
+
+.section .titre h2{
+    font-size: 50px;
+    max-width: 40px;
+    
+}
+
+.section .titre p {
+    font-weight: 30px;
+    max-width: 600px;
+    margin-top: 40px;
+
+}
+
+#menu{
+    border: 4px;
+    top: 20px;
+    display: flex;
+    background-color: white;
+}
+
+.font1{
+    font-family: 'Long Cang', cursive;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.gap{
+    margin: 30px;
+}
+.menu li a {
+    background-color: orangered;
+    text-decoration: none;
+    padding:20px;
+    margin:10px;
+    border-radius:30px;
+}

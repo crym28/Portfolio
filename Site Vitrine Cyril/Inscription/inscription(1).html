@@ -1,0 +1,104 @@
+<html>
+	<head>
+		 <title>Inscription</title>
+        <link rel="stylesheet" href="inscription.css">
+  
+	</head>
+	
+	<body>
+	<div class="Xiaomi">
+	<img src="Xiaomi_Logo_2021.png" width="8%" align="left">
+	</div>
+	<div class="font">
+	<h1> Xiaomi</h1>
+	</div>
+    <!-- Conteneur pour centrer les boutons -->
+    <div class="conteneur-boutons">
+    <!-- Éléments HTML représentant les boutons ronds -->
+    <a href="../Accueil/Accueil.html" class="bouton-rond">Accueil</a>
+    <a href="../à Propos/a propos.html" class="bouton-rond">À Propos</a>
+    <a href="../Produits/Produits1.html" class="bouton-rond">Produits</a>
+	<a href="../Contact/contact.html" class="bouton-rond">Contact</a>
+	<a href="../Connexion/Connexion.html" class="bouton-rond">Connexion</a>
+	
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <div class="count">
+	<img src="Xiaomi_Logo_2021.png" width="8%" align="left">
+  </div>
+  <div class="title">
+	<h1> Xiaomi</h1>
+ </div>
+ <font color="white">
+ <br></br>
+ <h2><p>24-26 Quai Alphonse Le Gallo </p></h2>
+ <br></br>
+ <br></br>
+ <div class="paragraphe">
+	<h1><p> Suivez - Nous </p></h1>
+</div>
+
+<div class= "image">
+
+	<a href="https://www.instagram.com/xiaomi.france/">
+        <img src="Instagram LOGO (1).png" width="6%" alt="Image du réseaux social Instagram">
+    </a>
+	
+    <a href="https://twitter.com/xiaomi">
+        <img src="ImageTwitter (1).jpg" width="6%" alt="Image du réseaux social X (Twitter)">
+    </a> 
+    <a href="https://www.facebook.com/XiaomiGlobal/">
+        <img src="ImagesFaccebook (1).png" width="6%" alt="Image du réseaux social Facebook">
+    </a> 
+    <a href="https://www.youtube.com/c/xiaomi/videos">
+        <img src="ImagesYoutube (1).jpg" width="11%" alt="Image du réseaux social Youtube">
+    </a>
+</div>
+
+<div class="container">
+            
+            <h1>Inscription</h1>
+            <!-- Formulaire d'inscription avec des champs de saisie et un bouton de soumission -->
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe" required>
+                <input type="text" id="email" placeholder="Adresse e-mail" required>
+                <input type="submit" value="Créer un Compte">
+            </form>
+            <!-- Zone d'affichage du message de confirmation -->
+            <div class="confirmation-message" id="confirmationMessage"></div>
+        </div>
+
+        <!-- Script JavaScript formulaire -->
+        <script>
+            document.getElementById("registrationForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                // Récupérer les valeurs saisies par l'utilisateur
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var confirmPassword = document.getElementById("confirmPassword").value;
+                var email = document.getElementById("email").value;
+                var confirmationMessage = document.getElementById("confirmationMessage");
+
+                // Vérifier si les valeurs saisies correspondent aux valeurs
+                if (username === "danoush" && password === "2023" && confirmPassword === "2023" && email === "ravisankerdanoush@gmail.com") {
+                    // Afficher un message de réussite si les informations sont correctes
+                    confirmationMessage.innerText = `Confirmation du compte pour ${username} (${email}) réussie!`;
+                    confirmationMessage.className = "confirmation-success";
+                } else {
+                    // Afficher un message d'erreur si les informations sont incorrectes
+                    confirmationMessage.innerText = "Les informations d'inscription sont incorrectes.";
+                    confirmationMessage.className = "confirmation-error";
+                }
+
+                // Afficher le message de confirmation
+                confirmationMessage.style.display = "block";
+            });
+        </script>
+     </body>
+</html>

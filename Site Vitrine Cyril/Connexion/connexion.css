@@ -1,0 +1,179 @@
+/* Style pour les boutons */
+		.bouton-rond {
+      background-color: orangered;
+      text-decoration: none;
+      padding:20px;
+      margin:10px;
+      border-radius:30px;
+		  margin-left:180px ;
+      margin-top: auto;
+      color:WHITE;
+	}
+
+  .navbar .logo{
+    color: orangered;
+    font-weight: 300;
+    font-size: 2.1rem;
+    text-decoration: none; 
+    }
+    /* Style au survol du bouton */
+    .bouton-rond:hover {
+      background-color: #f2f2f2;
+    }
+    
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        display: inline-block; /* Aligner le texte et l'image horizontalement */
+    }
+	
+	 .img {
+      width: 20px;
+      vertical-align: middle; /* Ajout de cette ligne pour aligner verticalement l'image */
+      margin-right: 10px; /* Espace à droite de l'image */
+    }
+
+    .font {
+      font-family: 'Long Cang', cursive;
+      margin-top: 20px;
+      display: inline-block; /* Aligner le texte et l'image horizontalement */
+	    margin-left: 25px;
+	    color:white;
+	  
+    }
+	
+	body{
+		  background-image: url('Contact.jpg');
+		  background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+	}
+	
+	.count{
+		margin-left: 1420px;
+		margin-top:15px;
+		width:85%;
+	}
+	
+	.title {
+	  font-family: 'Long Cang', cursive;
+    margin-top: 20px;
+    display: inline-block; /* Ajout de cette ligne pour aligner le texte et l'image horizontalement */
+	  margin-left: 25px;
+	  color:white;
+	}
+	
+	
+	p {
+    font-size: 40; 
+    text-decoration: none; 
+    padding-bottom: 10px; 
+    margin-right: 5%;
+    color: white; 
+   }
+  .paragraphe {
+    font-size: 40; 
+    text-decoration: none; 
+    margin-right: 10%;
+    color: white;
+  }
+  
+  .image{
+	  margin-top: 185px;
+	  margin-left: 1300px;
+	  display: inline-block;
+  }
+  
+  .container {
+    max-width: 500px;
+    padding: 25px;
+    background-color: orangered;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 50px;
+	  margin-top:-500px;
+	  margin-left:125px;
+    
+}
+
+/* Style pour le titre h2 */
+h2 {
+    color: green;
+	  width:95%;
+	  margin-top:-19px;	
+	
+}
+
+/* Style pour les champs de texte */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #0074e4;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style pour les champs de texte en focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 5px rgba(0, 116, 228, 0.7);
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:20px;
+    margin-top:15px;
+}
+
+/* Style pour le bouton de soumission en survol */
+input[type="submit"]:hover {
+    background-color: #0056aa;  
+}
+
+/* Style pour le conteneur de message */
+.message-container {
+    position: fixed;
+    top: 180;
+    left: 50%;
+    width: 300px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    display: none;
+    font-size: 38px;
+}
+
+/* Style pour le conteneur de message en cas d'erreur */
+.message-container.error {
+    background-color: #FF5733;
+}
+
+.p {
+	margin-left:20px;
+  left: 25%;
+}
+
+.create-account {
+	margin-top:30px;
+  display: flex;
+  left: 10%;
+  color: black;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+  
+  
+ 
