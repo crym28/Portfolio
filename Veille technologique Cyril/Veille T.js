@@ -1,0 +1,1 @@
+alert("Bonjour, bienvenue dans mon site de Veille Technologique sur la robotique")
